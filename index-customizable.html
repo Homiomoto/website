@@ -1,0 +1,1201 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <script>window["__codeletBootstrap__"] = JSON.parse('{"A":"A","B":"20260929-05-baae6c9","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script>
+  <script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js"
+    integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio</title>
+  <!--
+    FOTO WEBSITE
+    Taruh foto kamu di folder "images" di sebelah file HTML ini.
+    Nama file mengikuti data-template-id pada setiap gambar.
+
+    Contoh:
+      images/hero-image.jpg
+      images/wedding-image-1.jpg
+      images/wedding-image-2.jpg
+      images/prewedding-image-1.jpg
+      images/engagement-image-1.jpg
+
+    Kamu bebas mengganti foto cukup dengan mengganti file JPG tersebut.
+    Jika ingin memakai PNG/WEBP, ubah ".jpg" pada src gambar terkait.
+  -->
+  <style>
+    :root {
+      --charcoal: #252322;
+      --charcoal-2: #302d2b;
+      --ink: #f1e6dc;
+      --rose: #caa797;
+      --muted: #b39f96;
+      --line: rgba(230, 211, 200, .24);
+      --field: #393533;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      width: 100%;
+      overflow-x: hidden;
+      background: var(--charcoal);
+      color: var(--ink);
+      font-family: Roboto, sans-serif
+    }
+
+    .site-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      background: radial-gradient(circle at 88% 4%, #403832 0, transparent 29%), var(--charcoal)
+    }
+
+    .serif {
+      font-family: Georgia, "Times New Roman", serif
+    }
+
+    .topbar {
+      background: rgba(37, 35, 34, .95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px)
+    }
+
+    .site-logo-image {
+      width: auto;
+      height: 5.625rem;
+      max-width: 330px;
+      object-fit: contain;
+      filter: invert(1) sepia(.13) saturate(.7) brightness(1.5)
+    }
+
+    .nav-link,
+    .filter-button {
+      font-size: .68rem;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color .2s ease
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible,
+    .nav-link.active,
+    .filter-button.active {
+      color: var(--rose)
+    }
+
+    .nav-link.active {
+      border-bottom: 1px solid var(--rose);
+      padding-bottom: .5rem
+    }
+
+    .view {
+      display: none;
+      animation: appear .45s ease both
+    }
+
+    .view.active {
+      display: block
+    }
+
+    .eyebrow {
+      font-size: .67rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--rose)
+    }
+
+    .display-title,
+    .section-title {
+      font-family: Georgia, "Times New Roman", serif;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      line-height: 1.08;
+      color: var(--ink)
+    }
+
+    .display-title {
+      font-size: clamp(2.65rem, 5.3vw, 5.7rem)
+    }
+
+    .section-title {
+      font-size: clamp(2.1rem, 3.8vw, 4.2rem)
+    }
+
+    .copy {
+      color: #d3c4bb;
+      line-height: 1.8
+    }
+
+    .rule {
+      border-color: var(--line)
+    }
+
+    .button-dark,
+    .button-outline {
+      min-height: 48px;
+      padding: .85rem 1.25rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      border: 1px solid var(--rose);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      transition: all .2s ease
+    }
+
+    .button-dark {
+      background: var(--rose);
+      color: #262322
+    }
+
+    .button-outline {
+      background: transparent;
+      color: var(--ink)
+    }
+
+    .button-dark:hover,
+    .button-outline:hover {
+      transform: translateY(-2px);
+      background: #ead7cb;
+      color: #242120
+    }
+
+    .button-dark:focus-visible,
+    .button-outline:focus-visible,
+    a:focus-visible,
+    button:focus-visible,
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid #ead7cb;
+      outline-offset: 3px
+    }
+
+    .hero-image {
+      width: 100%;
+      min-height: 440px;
+      height: calc(65 * min(var(--vh, 1vh), 1vh));
+      max-height: 670px;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(.72) saturate(.68) contrast(1.05)
+    }
+
+    .hero-frame {
+      position: relative;
+      border: 1px solid var(--line);
+      padding: .55rem
+    }
+
+    .hero-frame:after {
+      content: "";
+      position: absolute;
+      inset: .55rem;
+      background: linear-gradient(90deg, rgba(20, 18, 17, .3), transparent 50%);
+      pointer-events: none
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.1rem;
+      max-width: 1200px;
+      margin-inline: auto
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      background: #181716;
+      cursor: zoom-in;
+      border: 1px solid rgba(230, 211, 200, .12);
+      aspect-ratio: 4/5;
+      text-align: left
+    }
+
+    .photo-card.wide {
+      aspect-ratio: 4/5
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(.75) saturate(.62);
+      transition: transform .7s ease, filter .5s ease
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.04);
+      filter: brightness(.9) saturate(.78)
+    }
+
+    .photo-card:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 13, 12, .82), transparent 58%);
+      pointer-events: none
+    }
+
+    .portfolio-caption {
+      position: absolute;
+      z-index: 1;
+      left: 1rem;
+      right: 1rem;
+      bottom: 1rem
+    }
+
+    .mobile-menu {
+      display: none;
+      border-top: 1px solid var(--line)
+    }
+
+    .mobile-menu.open {
+      display: block
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 70;
+      padding: 1rem;
+      background: rgba(12, 11, 10, .94);
+      align-items: center;
+      justify-content: center
+    }
+
+    .lightbox.open {
+      display: flex
+    }
+
+    .lightbox-panel {
+      width: min(100%, 1050px);
+      max-height: 94%;
+      overflow: auto;
+      background: #2b2826;
+      border: 1px solid var(--line)
+    }
+
+    .lightbox-image {
+      display: block;
+      width: 100%;
+      max-height: calc(75 * min(var(--vh, 1vh), 1vh));
+      object-fit: contain;
+      background: #181716
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--line)
+    }
+
+    .faq-button {
+      width: 100%;
+      padding: 1.35rem 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      text-align: left;
+      color: var(--ink)
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 2rem 1.4rem 0;
+      color: #d3c4bb;
+      line-height: 1.75
+    }
+
+    .faq-item.open .faq-answer {
+      display: block
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg)
+    }
+
+    .faq-icon {
+      color: var(--rose);
+      transition: transform .2s ease
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: var(--field);
+      padding: .9rem;
+      color: var(--ink);
+      font: inherit
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical
+    }
+
+    option {
+      background: #393533
+    }
+
+    .status {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      line-height: 1.6
+    }
+
+    .status.show {
+      display: block
+    }
+
+    .status.success {
+      color: #f1e6dc;
+      background: #443b35
+    }
+
+    .status.error {
+      color: #f4d1c7;
+      background: #4d2e2b
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(12px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @media(max-width:639px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .7rem
+      }
+
+      .photo-card,
+      .photo-card.wide {
+        aspect-ratio: 4/5;
+        min-height: 0
+      }
+
+      .portfolio-caption {
+        left: .65rem;
+        right: .65rem;
+        bottom: .65rem
+      }
+    }
+
+    \n @media(min-width:640px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.35rem
+      }
+    }
+
+    @media(min-width:1024px) {
+      .portfolio-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem
+      }
+
+      .photo-card:nth-child(5n+2) {
+        margin-top: 2rem
+      }
+
+      .photo-card:nth-child(7n+4) {
+        margin-top: -1rem
+      }
+    }
+
+    @media(max-width:767px) {
+      .site-logo-image {
+        height: 4.65rem;
+        max-width: 263px
+      }
+
+      .hero-image {
+        min-height: 390px
+      }
+
+      .display-title {
+        letter-spacing: .09em
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript"
+    integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/6bf4579cc4c25151.editing_sdk.js" type="text/javascript"
+    integrity="sha512-12l4JxmokLfWaGAHNO68l5Ev8ahSshUKfuxnYUB8nkqSU1+WiCvimsPjHzPjw1k7DcHL+eZ+K9Bld04jnd5gkg=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript"
+    integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+</head>
+
+<body data-template-id="__page-root" style="background: rgb(37, 35, 34);">
+  <div class="site-shell">
+    <header class="topbar sticky top-0 z- w-full">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-2 py-2 md:px-8"><a href="#story"
+          aria-label="Kembali ke Story"> <img data-template-id="images/homio2.png" class="canva-image site-logo-image"
+            loading="lazy" src="images/homio1.png" alt="Logo photography studio"> </a>
+        <nav class="hidden items-center gap-7 md:flex" aria-label="Navigasi utama"><a href="#story"
+            class="nav-link active">Story</a> <a href="#portfolio" class="nav-link">Portfolio</a> <a href="#services"
+            class="nav-link">Services</a> <a href="#booking" class="nav-link">Booking</a> <a href="#faq"
+            class="nav-link">FAQ / Contact</a>
+        </nav><button id="menu-toggle" class="text-[#caa797] md:hidden" type="button" aria-label="Buka menu"
+          aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+      <nav id="mobile-menu" class="mobile-menu px-5 pb-6 md:hidden" aria-label="Navigasi mobile">
+        <div class="flex flex-col gap-5 pt-5"><a href="#story" class="nav-link">Story</a><a href="#portfolio"
+            class="nav-link">Portfolio</a><a href="#services" class="nav-link">Services</a><a href="#booking"
+            class="nav-link">Booking</a><a href="#faq" class="nav-link">FAQ / Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="story" class="view active" aria-labelledby="story-title">
+        <div class="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+          <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div class="lg:col-span-5">
+              <p data-template-id="story-eyebrow" class="canva-text eyebrow mb-7"
+                style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+                ARCHIVES FOR THE NOSTALGIC</p>
+              <h1 id="story-title" data-template-id="story-title-text" class="canva-text display-title"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 32px; letter-spacing: 0.08rem; line-height: 1.08;">
+                EVERY COUPLE HAS A STORY, AND EVERY STORY DESERVES TO BE TOLD IN A WAY THAT FEELS TRUE TO WHO YOU ARE.</h1>
+              <p data-template-id="story-intro" class="canva-text copy mt-8 max-w-xl"
+                style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.6;">
+                From quiet glances and genuine laughter to the people who surround you on your most meaningful days — we capture your story as it naturally unfolds, preserving the emotions, connections, and little details that make it truly yours.</p>
+              <div class="mt-10 flex flex-col gap-3 sm:flex-row"><a href="#portfolio"
+                  data-template-id="story-portfolio-cta" class="canva-button button-dark"
+                  style="background: rgb(202, 167, 151); color: rgb(37, 35, 34); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">VIEW
+                  PORTFOLIO</a> <a href="#booking" data-template-id="story-booking-cta"
+                  class="canva-button button-outline"
+                  style="background: transparent; color: rgb(241, 230, 220); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">VIEW
+                  PRICELIST</a>
+              </div>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="hero-frame">
+                <img data-template-id="hero-image" class="canva-image hero-image" loading="lazy"
+                  src="images/DSC01680.jpg" alt="Pengantin mengenakan busana tradisional dalam suasana pernikahan">
+              </div>
+              <p data-template-id="hero-caption" class="canva-text mt-4 text-xs tracking-widest text-[#b39f96]"
+                style="color: rgb(179, 159, 150); font-weight: 400; font-style: normal; font-size: 12px;">Wedding
+                stories, quietly observed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="view" aria-labelledby="portfolio-title">
+        <div class="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+          <p data-template-id="portfolio-eyebrow" class="canva-text eyebrow mb-5"
+            style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+            Selected frames</p>
+          <h1 id="portfolio-title" data-template-id="portfolio-title-text" class="canva-text section-title max-w-4xl"
+            style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 32px; letter-spacing: 0.08rem;">
+            A collection of moments, emotions, and little things that made each day uniquely yours.</h1>
+          <p data-template-id="portfolio-intro" class="canva-text copy mt-7 max-w-2xl"
+            style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+            Album ini mengikuti cerita hari pernikahan, dari detail kecil hingga momen yang dirayakan bersama.</p>
+          <div class="my-12 flex flex-wrap gap-x-6 gap-y-4 border-y rule py-5" role="toolbar"
+            aria-label="Filter kategori portfolio"><button data-template-id="filter-wedding"
+              class="canva-button filter-button active" data-filter="wedding" type="button"
+              style="color: rgb(179, 159, 150); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">WEDDING</button>
+            <button data-template-id="filter-prewedding" class="canva-button filter-button" data-filter="prewedding"
+              type="button"
+              style="color: rgb(179, 159, 150); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">PREWEDDING</button>
+            <button data-template-id="filter-engagement" class="canva-button filter-button" data-filter="engagement"
+              type="button"
+              style="color: rgb(179, 159, 150); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.08rem;">ENGAGEMENT</button>
+          </div>
+          <div id="portfolio-grid" class="portfolio-grid"><button type="button" class="photo-card"
+              data-category="wedding" data-lightbox="wedding-1"><img data-template-id="wedding-image-1"
+                class="canva-image" loading="lazy" src="images/DSC01486.jpg"
+                alt="Potret pengantin pria dengan busana tradisional"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-1" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-1" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card wide" data-category="wedding" data-lightbox="wedding-2"><img
+                data-template-id="wedding-image-2" class="canva-image" loading="lazy" src="images/DSC01781.jpg"
+                alt="Pengantin pria bersama keluarga dan pendamping"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-2" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-2" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card wide" data-category="wedding" data-lightbox="wedding-3"><img
+                data-template-id="wedding-image-3" class="canva-image" loading="lazy" src="images/DSC02305.jpg"
+                alt="Pelukan keluarga pada hari pernikahan"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-3" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-3" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-4"><img
+                data-template-id="wedding-image-4" class="canva-image" loading="lazy" src="images/DSC02317.jpg"
+                alt="Potret pengantin wanita dalam busana tradisional"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-4" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-4" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card wide" data-category="wedding" data-lightbox="wedding-5"><img
+                data-template-id="wedding-image-5" class="canva-image" loading="lazy" src="images/DSC02001.jpg"
+                alt="Pengantin wanita bersama keluarga dan pendamping"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-5" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-5" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-6"><img
+                data-template-id="wedding-image-6" class="canva-image" loading="lazy" src="images/DSC01194.jpg"
+                alt="Pengantin wanita duduk saat prosesi pernikahan"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-6" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-6" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-7"><img
+                data-template-id="wedding-image-7" class="canva-image" loading="lazy" src="images/DSC01075.jpg"
+                alt="Pasangan pengantin melambaikan tangan saat resepsi"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-7" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-7" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-8"><img
+                data-template-id="wedding-image-8" class="canva-image" loading="lazy" src="images/DSC01867.jpg"
+                alt="Detail undangan dan cincin pernikahan"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-8" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-8" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-9"><img
+                data-template-id="wedding-image-9" class="canva-image" loading="lazy" src="images/DSC01256.jpg"
+                alt="Pengantin wanita bersama orang tua di bawah rangkaian bunga"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-9" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-9" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-10"><img
+                data-template-id="wedding-image-10" class="canva-image" loading="lazy" src="images/DSC01923.jpg"
+                alt="Pengantin wanita bersama keluarga saat memasuki prosesi"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-10" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-10" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-11"><img
+                data-template-id="wedding-image-11" class="canva-image" loading="lazy" src="images/DSC01917.jpg"
+                alt="Prosesi pernikahan tradisional di depan dekorasi bunga"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-11" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-11" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-12"><img
+                data-template-id="wedding-image-12" class="canva-image" loading="lazy" src="images/DSC01915.jpg"
+                alt="Pasangan dan keluarga dalam prosesi pernikahan"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-12" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-12" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-13"><img
+                data-template-id="wedding-image-13" class="canva-image" loading="lazy" src="images/DSC01881.jpg"
+                alt="Suasana prosesi pernikahan tradisional"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-13" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-13" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="wedding" data-lightbox="wedding-14"><img
+                data-template-id="wedding-image-14" class="canva-image" loading="lazy" src="images/DSC01810.jpg"
+                alt="Keluarga dan tamu menyaksikan acara pernikahan"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-14" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-14" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="edding" data-lightbox="wedding-15"><img
+                data-template-id="wedding-image-15" class="canva-image" loading="lazy" src="images/DSC01680.jpg"
+                alt="Momen pelukan antara pengantin dan keluarga"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-15" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-15" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button
+                alt="Cincin dan stationery pernikahan"><span class="portfolio-caption"><span
+                  data-template-id="wedding-category-18" class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="wedding-caption-18" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-1"><img
+                data-template-id="prewedding-image-1" class="canva-image" loading="lazy"
+                src="images/DSC04964.jpg" alt="Pasangan berbagi momen di dapur"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-1"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-1" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-2"><img
+                data-template-id="prewedding-image-2" class="canva-image" loading="lazy"
+                src="images/DSC04976-2.jpg" alt="Pasangan bercanda bersama di meja"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-2"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-2" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-3"><img
+                data-template-id="prewedding-image-3" class="canva-image" loading="lazy"
+                src="images/DSC04990-2.jpg" alt="Pasangan menikmati waktu bersama di dapur"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-3"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-3" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-4"><img
+                data-template-id="prewedding-image-4" class="canva-image" loading="lazy"
+                src="images/DSC05043-2.jpg" alt="Pasangan duduk bersama di padang rumput"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-4"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-4" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-5"><img
+                data-template-id="prewedding-image-5" class="canva-image" loading="lazy"
+                src="images/DSC05056-2.jpg" alt="Pasangan bermain bersama di luar ruang"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-5"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-5" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-6"><img
+                data-template-id="prewedding-image-6" class="canva-image" loading="lazy"
+                src="images/DSC05074.jpg" alt="Pasangan bercanda dengan mangkuk ikan"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-6"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-6" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-7"><img
+                data-template-id="prewedding-image-7" class="canva-image" loading="lazy"
+                src="images/DSC05085.jpg" alt="Pasangan duduk di sofa di lapangan"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-7"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-7" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-8"><img
+                data-template-id="prewedding-image-8" class="canva-image" loading="lazy"
+                src="images/DSC05114-2.jpg" alt="Pasangan bermain di sekitar sofa merah"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-8"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-8" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-9"><img
+                data-template-id="prewedding-image-9" class="canva-image" loading="lazy"
+                src="images/DSC05125.jpg" alt="Pasangan berpose di sofa merah"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-9"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-9" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="prewedding" data-lightbox="prewedding-10"><img
+                data-template-id="prewedding-image-10" class="canva-image" loading="lazy"
+                src="images/DSC05187-2.jpg" alt="Pasangan tertawa sambil memegang mangkuk ikan"><span
+                class="portfolio-caption"><span data-template-id="prewedding-category-10"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="prewedding-caption-10" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-1"><img
+                data-template-id="engagement-image-1" class="canva-image" loading="lazy"
+                src="images/DSC06218.jpg" alt="DSC06218 — pasangan berpose bersama"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-1"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-1" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-2"><img
+                data-template-id="engagement-image-2" class="canva-image" loading="lazy"
+                src="images/DSC06229.jpg" alt="DSC06229 — pasangan berdiri bersama"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-2"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-2" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-3"><img
+                data-template-id="engagement-image-3" class="canva-image" loading="lazy"
+                src="images/DSC06284.jpg" alt="DSC06284 — pasangan menunjukkan cincin"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-3"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-3" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-4"><img
+                data-template-id="engagement-image-4" class="canva-image" loading="lazy"
+                src="images/DSC06310.jpg" alt="DSC06310 — potret pasangan dengan buket"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-4"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-4" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-5"><img
+                data-template-id="engagement-image-5" class="canva-image" loading="lazy"
+                src="images/MUH04861.jpg" alt="MUH04861 — portrait personal dengan buket"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-5"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-5" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-6"><img
+                data-template-id="engagement-image-6" class="canva-image" loading="lazy"
+                src="images/MUH04867.jpg" alt="MUH04867 — potret personal dalam cahaya lembut"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-6"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-6" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-7"><img
+                data-template-id="engagement-image-7" class="canva-image" loading="lazy"
+                src="images/MUH04898.jpg" alt="MUH04898 — detail busana dan bunga"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-7"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-7" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-8"><img
+                data-template-id="engagement-image-8" class="canva-image" loading="lazy"
+                src="images/MUH04963.jpg" alt="MUH04963 — close-up tangan dengan cincin"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-8"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-8" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-9"><img
+                data-template-id="engagement-image-9" class="canva-image" loading="lazy"
+                src="images/MUH04974.jpg" alt="MUH04974 — portrait dramatis dengan cahaya"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-9"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-9" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+            <button type="button" class="photo-card" data-category="engagement" data-lightbox="engagement-10"><img
+                data-template-id="engagement-image-10" class="canva-image" loading="lazy"
+                src="images/MUH05007.jpg" alt="MUH05007 — sepatu dalam sorot cahaya"><span
+                class="portfolio-caption"><span data-template-id="engagement-category-10"
+                  class="canva-text text-[10px] uppercase tracking-[.2em]"
+                  style="color: rgb(234, 215, 203); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;"></span><span
+                  data-template-id="engagement-caption-10" class="canva-text serif mt-2 block text-xl"
+                  style="color: rgb(255, 255, 255); font-weight: 500; font-style: normal; font-size: 16px;"></span></span></button>
+          </div>
+          <div class="mt-14 text-center">
+            <a href="#booking" data-template-id="portfolio-cta" class="canva-button button-dark"
+              style="background: rgb(202, 167, 151); color: rgb(37, 35, 34); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">CHECK
+              AVAILABILITY</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="view" aria-labelledby="services-title">
+        <div class="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+          <div class="grid gap-8 border-b rule pb-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+              <p data-template-id="services-eyebrow" class="canva-text eyebrow mb-5"
+                style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+                Services</p>
+              <h1 id="services-title" data-template-id="services-title-text" class="canva-text section-title"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 32px; letter-spacing: 0.08rem;">
+                More than photographs. A thoughtful way of preserving your story.</h1>
+            </div>
+            <p data-template-id="services-intro" class="canva-text copy self-end lg:col-span-5 lg:col-start-7"
+              style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+              Pilih titik awal yang paling dekat dengan ceritamu. Detail layanan dapat disesuaikan agar terasa tepat
+              untuk kebutuhan kamu.</p>
+          </div>
+          <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="border-t border-[#caa797] pt-5">
+              <h2 data-template-id="service-title-wedding" class="canva-text serif text-3xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 24px;">WEDDING</h2>
+              <p data-template-id="service-duration-wedding" class="canva-text eyebrow mt-7"
+                style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+                10 JAM</p>
+              <p data-template-id="service-price-wedding" class="canva-text serif mt-3 text-2xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 24px;">Start from
+                Rp2.800.000</p>
+              <div class="mt-6 grid grid-cols-2 gap-3"><img data-template-id="service-wedding-photo-1"
+                  class="canva-image h-40 w-full object-cover" loading="lazy" src="images/DSC01680.jpg"
+                  alt="Potret pengantin pria dengan busana tradisional"><img data-template-id="service-wedding-photo-2"
+                  class="canva-image h-40 w-full object-cover" loading="lazy" src="images/DSC01194.jpg"
+                  alt="Pengantin pria bersama keluarga dan pendamping"><img data-template-id="service-wedding-photo-3"
+                  class="canva-image h-40 w-full object-cover" loading="lazy" src="images/DSC01881.jpg"
+                  alt="Pelukan keluarga pada hari pernikahan"><img data-template-id="service-wedding-photo-4"
+                  class="canva-image h-40 w-full object-cover" loading="lazy" src="images/DSC01781.jpg"
+                  alt="Potret pengantin wanita dalam busana tradisional">
+              </div>
+            </article>
+            <article class="border-t border-[#caa797] pt-5">
+              <h2 data-template-id="service-title-prewedding" class="canva-text serif text-3xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 24px;">PREWEDDING
+              </h2>
+              <p data-template-id="service-duration-prewedding" class="canva-text eyebrow mt-7"
+                style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+                3 JAM</p>
+              <p data-template-id="service-price-prewedding" class="canva-text serif mt-3 text-2xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 24px;">Start from
+                Rp1.000.000</p>
+              <div class="mt-6 grid grid-cols-2 gap-3"><img data-template-id="service-prewedding-photo-1"
+                  class="canva-image h-40 w-full object-cover" loading="lazy"
+                  src="images/DSC05114-2.jpg" alt="Pasangan berpose bersama dalam busana formal"><img
+                  data-template-id="service-prewedding-photo-2" class="canva-image h-40 w-full object-cover"
+                  loading="lazy" src="images/DSC04964.jpg"
+                  alt="Pasangan bergandengan tangan di depan dekorasi bunga">
+              </div>
+            </article>
+            <article class="border-t border-[#caa797] pt-5">
+              <h2 data-template-id="service-title-engagement" class="canva-text serif text-3xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 24px;">ENGAGEMENT
+              </h2>
+              <p data-template-id="service-duration-engagement" class="canva-text eyebrow mt-7"
+                style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+                3 JAM</p>
+              <p data-template-id="service-price-engagement" class="canva-text serif mt-3 text-2xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 24px;">MULAI DARI
+                Rp750.000</p>
+              <div class="mt-6 grid grid-cols-2 gap-3"><img data-template-id="service-engagement-photo-1"
+                  class="canva-image h-40 w-full object-cover" loading="lazy"
+                  src="images/DSC06218.jpg" alt="Pasangan menunjukkan cincin pertunangan"><img
+                  data-template-id="service-engagement-photo-2" class="canva-image h-40 w-full object-cover"
+                  loading="lazy" src="images/MUH04867.jpg" alt="Potret pasangan bersama buket bunga">
+              </div>
+            </article>
+          </div>
+          <div class="mt-14 text-center">
+            <a href="#booking" data-template-id="services-cta" class="canva-button button-dark"
+              style="background: rgb(202, 167, 151); color: rgb(37, 35, 34); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">BOOK
+              YOUR DATE</a>
+          </div>
+        </div>
+      </section>
+      <section id="booking" class="view" aria-labelledby="booking-title">
+        <div class="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+          <p data-template-id="booking-eyebrow" class="canva-text eyebrow mb-5"
+            style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+            Booking inquiry</p>
+          <h1 id="booking-title" data-template-id="booking-title-text" class="canva-text section-title max-w-4xl"
+            style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 32px; letter-spacing: 0.08rem;">
+            Let’s Talk About Your Day</h1>
+          <p data-template-id="booking-intro" class="canva-text copy mt-7 max-w-2xl"
+            style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+            Ceritakan tentang hari Anda. Mulai dari tanggal, lokasi, hingga sedikit tentang bagaimana Anda ingin
+            mengingat momen tersebut.</p>
+          <div class="mt-14 grid gap-14 lg:grid-cols-12">
+            <form id="booking-form" class="lg:col-span-7" novalidate="">
+              <div class="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label data-template-id="booking-name-label" class="canva-text mb-2 block" for="booking-name"
+                    style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Nama</label><input
+                    id="booking-name" name="name" type="text" required="" autocomplete="name">
+                </div>
+                <div>
+                  <label data-template-id="booking-contact-label" class="canva-text mb-2 block" for="booking-contact"
+                    style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Email atau
+                    WhatsApp</label><input id="booking-contact" name="contact" type="text" required=""
+                    autocomplete="email">
+                </div>
+                <div>
+                  <label data-template-id="booking-session-label" class="canva-text mb-2 block" for="booking-session"
+                    style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Jenis
+                    sesi</label><select id="booking-session" name="session_type" required="">
+                    <option value="">Pilih layanan</option>
+                    <option>Wedding</option>
+                    <option>Prewedding</option>
+                    <option>Engagement</option>
+                    <option>Portrait</option>
+                  </select>
+                </div>
+                <div>
+                  <label data-template-id="booking-date-label" class="canva-text mb-2 block" for="booking-date"
+                    style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Tanggal
+                    pilihan</label><input id="booking-date" name="preferred_date" type="date" required="">
+                </div>
+              </div>
+              <div class="mt-5">
+                <label data-template-id="booking-location-label" class="canva-text mb-2 block" for="booking-location"
+                  style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Lokasi</label><input
+                  id="booking-location" name="location" type="text" required="">
+              </div>
+              <div class="mt-5">
+                <label data-template-id="booking-message-label" class="canva-text mb-2 block" for="booking-message"
+                  style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Ceritakan
+                  rencana atau konsep Anda</label><textarea id="booking-message" name="message"></textarea>
+              </div><a id="booking-submit" data-template-id="booking-submit-button"
+                class="canva-button button-dark mt-7 opacity-50 pointer-events-none" href="#" target="_self"
+                rel="noopener noreferrer" aria-disabled="true" tabindex="-1"
+                style="background: rgb(202, 167, 151); color: rgb(37, 35, 34); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.1rem;">CHECK
+                AVAILABILITY</a>
+              <p id="booking-validation-hint" class="mt-2 text-xs text-[#b39f96]" aria-live="polite">Mohon lengkapi
+                semua kolom wajib dengan benar.</p>
+              <p class="mt-2 text-xs text-[#b39f96]">Jika WhatsApp belum terbuka, salin link ini:
+                https://wa.me/6283896013156</p>
+              <div id="booking-status" class="status" aria-live="polite"></div>
+              <div id="whatsapp-actions" class="status" aria-live="polite">
+                <p class="mb-4">Validasi berhasil. Ketuk tautan ini untuk melanjutkan ke WhatsApp.</p><a
+                  id="whatsapp-link" class="button-dark" href="#" target="_blank" rel="noopener noreferrer">Buka
+                  WhatsApp</a> <button id="copy-message" class="button-outline ml-2" type="button">Salin pesan</button>
+                <p id="copy-status" class="mt-3" aria-live="polite"></p>
+              </div>
+            </form>
+            <aside class="border-t border-[#caa797] pt-6 lg:col-span-4 lg:col-start-9">
+              <p data-template-id="booking-contact-title" class="canva-text serif text-3xl"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 16px;">Atau hubungi
+                langsung</p>
+              <p data-template-id="booking-contact-copy" class="canva-text copy mt-5"
+                style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+                Untuk pertanyaan singkat sebelum mengirim inquiry, gunakan kontak yang tersedia.</p>
+              <p data-template-id="booking-email-value" class="canva-text mt-8"
+                style="color: rgb(241, 230, 220); font-weight: 600; font-style: normal; font-size: 16px;">Whatsapp :
+                083896013156</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="view" aria-labelledby="faq-title">
+        <div class="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
+          <div class="grid gap-12 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+              <p data-template-id="faq-eyebrow" class="canva-text eyebrow mb-5"
+                style="color: rgb(202, 167, 151); font-weight: 600; font-style: normal; font-size: 16px; letter-spacing: 0.12rem;">
+                FAQ / Contact</p>
+              <h1 id="faq-title" data-template-id="faq-title-text" class="canva-text section-title"
+                style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 32px; letter-spacing: 0.08rem;">
+                Hal kecil yang perlu Kamu tahu.</h1>
+              <p data-template-id="faq-intro" class="canva-text copy mt-7"
+                style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+                Jawaban singkat untuk membantu Anda melangkah dengan lebih tenang.</p>
+            </div>
+            <div class="lg:col-span-6 lg:col-start-7">
+              <div class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false"><span data-template-id="faq-q-1"
+                    class="canva-text serif text-xl"
+                    style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 16px;">Kapan
+                    sebaiknya saya booking?</span><i data-lucide="plus" class="faq-icon"></i></button>
+                <p data-template-id="faq-a-1" class="canva-text faq-answer"
+                  style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+                  Sebaiknya kirim inquiry saat tanggal mulai Anda pertimbangkan. Ketersediaan akan dikonfirmasi langsung
+                  setelah detail dasar dibahas.</p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-button" type="button" aria-expanded="false"><span data-template-id="faq-q-2"
+                    class="canva-text serif text-xl"
+                    style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 16px;">Bagaimana
+                    proses pembayaran?</span><i data-lucide="plus" class="faq-icon"></i></button>
+                <p data-template-id="faq-a-2" class="canva-text faq-answer"
+                  style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+                  Detail pembayaran dan ketentuan booking akan dijelaskan saat inquiry Anda dikonfirmasi. Tidak ada
+                  pembayaran yang diproses melalui situs ini.</p>
+              </div>
+              <div class="faq-item border-b rule">
+                <button class="faq-button" type="button" aria-expanded="false"><span data-template-id="faq-q-3"
+                    class="canva-text serif text-xl"
+                    style="color: rgb(241, 230, 220); font-weight: 500; font-style: normal; font-size: 16px;">Bagaimana
+                    jika saya perlu reschedule?</span><i data-lucide="plus" class="faq-icon"></i></button>
+                <p data-template-id="faq-a-3" class="canva-text faq-answer"
+                  style="color: rgb(211, 196, 187); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.65;">
+                  Hubungi sesegera mungkin agar kita dapat mengecek kemungkinan tanggal pengganti sesuai ketersediaan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer data-template-id="site-footer" class="canva-footer border-t rule" style="background: rgb(29, 27, 26);">
+      <div
+        class="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-10 text-xs text-[#b39f96] md:flex-row md:items-center md:justify-between md:px-8">
+        <p data-template-id="footer-copyright" class="canva-text"
+          style="color: rgb(179, 159, 150); font-weight: 400; font-style: normal; font-size: 12px;">© 2023 Homiomoto.
+          All rights reserved.</p>
+        <nav class="flex gap-4 uppercase tracking-widest">
+          <a href="#story">Story</a><a href="#portfolio">Portfolio</a><a href="#booking">Booking</a>
+        </nav>
+        <p data-template-id="footer-contact" class="canva-text"
+          style="color: rgb(179, 159, 150); font-weight: 400; font-style: normal; font-size: 12px;">Wedding / Prewedding
+          / Engagement</p>
+      </div>
+    </footer>
+  </div>
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Preview portfolio">
+    <div class="lightbox-panel">
+      <div class="flex justify-end p-3">
+        <button id="lightbox-close" class="text-[#caa797]" type="button" aria-label="Tutup preview"><i
+            data-lucide="x"></i></button>
+      </div><img id="lightbox-image" class="lightbox-image" alt="">
+      <div class="p-7">
+        <p id="lightbox-category" class="eyebrow"></p>
+        <h2 id="lightbox-title" class="serif mt-3 text-3xl text-[#f1e6dc]"></h2>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showView() {
+      const requested = location.hash.slice(1) || "story";
+      const valid = ["story", "portfolio", "services", "booking", "faq"];
+      const selected = valid.includes(requested) ? requested : "story";
+      document.querySelectorAll(".view").forEach(view => view.classList.toggle("active", view.id === selected));
+      document.querySelectorAll(".nav-link").forEach(link => link.classList.toggle("active", link.getAttribute("href") === "#" + selected));
+      document.getElementById("mobile-menu").classList.remove("open");
+      document.getElementById("menu-toggle").setAttribute("aria-expanded", "false");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    addEventListener("hashchange", showView);
+
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      const menu = document.getElementById("mobile-menu");
+      const open = menu.classList.toggle("open");
+      document.getElementById("menu-toggle").setAttribute("aria-expanded", String(open));
+    });
+
+    document.querySelectorAll("[data-filter]").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll("[data-filter]").forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+        document.querySelectorAll("[data-category]").forEach(card => {
+          card.style.display = card.dataset.category === button.dataset.filter ? "block" : "none";
+        });
+      });
+    });
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const lightboxCategory = document.getElementById("lightbox-category");
+    const lightboxTitle = document.getElementById("lightbox-title");
+
+    document.querySelectorAll("[data-lightbox]").forEach(card => {
+      card.addEventListener("click", () => {
+        const image = card.querySelector("img");
+        const category = card.querySelector("[data-template-id^='wedding-category'], [data-template-id^='prewedding-category'], [data-template-id^='engagement-category']");
+        const caption = card.querySelector("[data-template-id^='wedding-caption'], [data-template-id^='prewedding-caption'], [data-template-id^='engagement-caption']");
+        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCategory.textContent = category ? category.textContent : "";
+        lightboxTitle.textContent = caption ? caption.textContent : "";
+        lightbox.classList.add("open");
+        document.getElementById("lightbox-close").focus();
+      });
+    });
+
+    function closeLightbox() { lightbox.classList.remove("open"); }
+    document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", event => { if (event.target === lightbox) closeLightbox(); });
+    document.addEventListener("keydown", event => { if (event.key === "Escape") closeLightbox(); });
+
+    document.querySelectorAll(".faq-button").forEach(button => {
+      button.addEventListener("click", () => {
+        const item = button.closest(".faq-item");
+        const open = item.classList.toggle("open");
+        button.setAttribute("aria-expanded", String(open));
+      });
+    });
+
+    let bookingCount = 0;
+    const status = document.getElementById("booking-status");
+    const submit = document.getElementById("booking-submit");
+
+    function setStatus(message, type) {
+      status.textContent = message;
+      status.className = "status show " + type;
+    }
+
+    const handler = {
+      onDataChanged(data) { bookingCount = data.length; }
+    };
+
+    async function initData() {
+      const result = await window.dataSdk.init(handler);
+      if (!result.isOk) setStatus("Form belum dapat terhubung. Silakan coba lagi beberapa saat.", "error");
+    }
+
+    const bookingForm = document.getElementById("booking-form");
+    const bookingHint = document.getElementById("booking-validation-hint");
+
+    function updateBookingLink() {
+      const valid = bookingForm.checkValidity();
+      submit.setAttribute("aria-disabled", String(!valid));
+      submit.classList.toggle("opacity-50", !valid);
+      submit.classList.toggle("pointer-events-none", !valid);
+      submit.tabIndex = valid ? 0 : -1;
+      bookingHint.textContent = valid ? "Semua kolom wajib sudah lengkap." : "Mohon lengkapi semua kolom wajib dengan benar.";
+      if (valid) {
+        const values = new FormData(bookingForm);
+        const message = [
+          "Booking inquiry",
+          `Nama: ${values.get("name")}`,
+          `Kontak: ${values.get("contact")}`,
+          `Jenis sesi: ${values.get("session_type")}`,
+          `Tanggal pilihan: ${values.get("preferred_date")}`,
+          `Lokasi: ${values.get("location")}`,
+          `Pesan: ${values.get("message") || "-"}`
+        ].join("\\n");
+        submit.href = `https://wa.me/6283896013156?text=${encodeURIComponent(message)}`;
+        submit.removeAttribute("aria-disabled");
+      } else {
+        submit.href = "#";
+      }
+    }
+
+    bookingForm.addEventListener("input", updateBookingLink);
+    bookingForm.addEventListener("change", updateBookingLink);
+    submit.addEventListener("click", event => {
+      updateBookingLink();
+      if (!bookingForm.checkValidity()) event.preventDefault();
+    });
+    updateBookingLink();
+
+    document.getElementById("copy-message").addEventListener("click", async event => {
+      const copyStatus = document.getElementById("copy-status");
+      try {
+        await navigator.clipboard.writeText(event.currentTarget.dataset.message || "");
+        copyStatus.textContent = "Pesan berhasil disalin.";
+      } catch {
+        copyStatus.textContent = "Pesan tidak dapat disalin otomatis. Silakan salin teks dari kolom formulir.";
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+      showView();
+      initData();
+    });
+  </script>
+
+
+  <script>
+    // Placeholder jika file foto belum tersedia.
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("img.canva-image").forEach(function (img) {
+        img.addEventListener("error", function () {
+          img.style.background = "#393533";
+          img.alt = "Foto belum tersedia: " + img.getAttribute("src");
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
